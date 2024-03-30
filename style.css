@@ -5,8 +5,6 @@
 
 body{
     font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .navbar{
@@ -14,6 +12,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    box-shadow: rgba(60, 46, 35, 0.5) 0px 7px 29px 0px;
 }
 
 .navbar-links{
@@ -23,10 +22,125 @@ body{
 
 .navbar-links a{
     text-decoration: none;
+    font-weight: 600;
     color: #3c2e23;
 }
 
 .navbar-links a:hover{
     text-decoration: underline;
     color: #3c2e23;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+.side-navbar{
+    background-color: #3c2e23;
+    position: fixed;
+    color: white;
+    top: 0;
+    left: -60%;
+    height: 100%;
+    width:40%;
+    padding:20px;
+    transition: 1s;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 20px;
+    align-items: center;
+}
+
+.header-div1 img{
+    width: 100%;
+    height: auto;
+}
+
+.header-div2{
+    text-align: center;
+}
+
+.header-div2 button{
+    background-color: #3c2e23;
+    border-radius: 3px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+}
+
+.service-div1{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.service-div2{
+    display: flex;
+    padding-inline: 20px;
+    gap: 5px;
+}
+
+.service-div3{
+    background-color:#eae7d8 ;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+@media  screen and (min-width:768px) {
+    .header{
+        flex-direction: row;
+        gap: 50px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .header-div2{
+        text-align: left;
+    }
+    .side-navbar{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .service-div2{
+        flex-direction: column;
+    }
+    .service-div1 p{
+        display: none;
+    }
 }
