@@ -1,13 +1,17 @@
-*{
+/* Resetting default padding and margin for all elements */
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+/* Body styles */
+body {
     font-family: "Varela Round", sans-serif;
+    background-color: white;
 }
 
-.navbar{
+/* Navbar styles */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,55 +19,60 @@ body{
     box-shadow: rgba(60, 46, 35, 0.5) 0px 7px 29px 0px;
 }
 
-.navbar-links{
+/* Navbar links styles */
+.navbar-links {
     display: flex;
     column-gap: 20px;
 }
 
-.navbar-links a{
+.navbar-links a {
     text-decoration: none;
     font-weight: 600;
     color: #3c2e23;
 }
 
-.navbar-links a:hover{
+.navbar-links a:hover {
     text-decoration: underline;
     color: #3c2e23;
 }
 
-.navbar-menu-toggle{
+/* Navbar menu toggle styles */
+.navbar-menu-toggle {
     display: none;
 }
 
-.side-navbar{
+/* Side navbar styles */
+.side-navbar {
     background-color: #3c2e23;
     position: fixed;
     color: white;
     top: 0;
     left: -60%;
     height: 100%;
-    width:40%;
-    padding:20px;
+    width: 40%;
+    padding: 20px;
     transition: 1s;
+    z-index: 1;
 }
 
-.side-navbar-links a{
+/* Side navbar links styles */
+.side-navbar-links a {
     text-decoration: none;
     font-weight: 600;
     color: white;
 }
 
-.side-navbar-links a:hover{
+.side-navbar-links a:hover {
     text-decoration: underline;
     color: white;
 }
 
-.side-navbar-link{
+.side-navbar-link {
     margin-bottom: 30px;
 }
 
-
-.header{
+/* Header styles */
+.header {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -71,16 +80,16 @@ body{
     align-items: center;
 }
 
-.header-div1 img{
+.header-div1 img {
     width: 100%;
     height: auto;
 }
 
-.header-div2{
+.header-div2 {
     text-align: center;
 }
 
-.header-div2 button{
+.header-div2 button {
     background-color: #3c2e23;
     border-radius: 3px;
     padding-block: 10px;
@@ -90,12 +99,13 @@ body{
     color: white;
 }
 
-.service{
+/* Service section styles */
+.service {
     display: flex;
     flex-direction: column;
 }
 
-.service-div1{
+.service-div1 {
     display: flex;
     justify-content: space-between;
     padding-inline: 20px;
@@ -103,44 +113,178 @@ body{
     align-items: center;
 }
 
-.service-div2{
+.service-div2 {
     display: flex;
     padding-inline: 20px;
     gap: 5px;
 }
 
-.service-div3{
-    background-color:#eae7d8 ;
+.service-div3 {
+    background-color: #eae7d8;
     border-radius: 5px;
     padding: 20px;
 }
 
-@media  screen and (min-width:768px) {
-    .header{
+/* New arrival products styles */
+.new-arrival-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.new-arrival-outfits {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.new-arrival-outfits button {
+    width: 100px;
+    padding-block: 10px;
+    background-color: #eae7d8;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    bottom: 32px;
+    left: 68px;
+}
+
+.new-arrival-outfits-1 {
+    display: none;
+}
+
+.new-arrival-outfits-1 button {
+    width: 100px;
+    padding-block: 10px;
+    background-color: #eae7d8;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    bottom: 32px;
+    left: 68px;
+}
+
+/* Newsletter section styles */
+.news-letter {
+    text-align: center;
+    margin: 30px;
+}
+
+.news-letter-button button {
+    background-color: #3c2e23;
+    border-radius: solid black 3px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Conclusion section styles */
+.conclusion {
+    background-color: #3c2e23;
+    color: white;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width:768px) {
+    /* Adjustments for larger screens */
+    .header {
         flex-direction: row;
         gap: 50px;
         padding-top: 40px;
         padding-bottom: 50px;
     }
-    .header-div2{
+
+    .header-div2 {
         text-align: left;
     }
-    .side-navbar{
+
+    .side-navbar {
         display: none;
     }
 }
 
-@media screen and (max-width:768px){
-    .navbar-menu-toggle{
+@media screen and (max-width:768px) {
+    /* Adjustments for smaller screens */
+    .navbar-menu-toggle {
         display: block;
     }
-    .navbar-links{
+
+    .navbar-links {
         display: none;
     }
-    .service-div2{
+
+    .service-div2 {
         flex-direction: column;
     }
-    .service-div1 p{
+
+    .service-div1 p {
         display: none;
     }
+
+    .new-arrival-outfits-1 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .conclusion div {
+        size: 40%;
+    }
 }
+
+
+/* styling collection page */
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin: 30px;
+}
+
+.product-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+    border-radius: 50px;
+    border: solid black 3px;
+    padding: 10px;
+}
+
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: large;
+}
+
+.product-search input:focus{
+    outline: none;
+    border: none;
+}
+
+.product-result img{
+    border-radius: 10px;
+}
+
+.product-result h2{
+    text-align: center;
+}
+
+.product-result-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

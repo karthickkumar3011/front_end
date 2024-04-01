@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking to custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importing Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <!-- Navbar links -->
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contacts</a></p>
+        </div>
+
+        <!-- Navbar menu toggle -->
+        <div class="navbar-menu-toggle" onclick="openSideNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+        <p style="text-align: right;" onclick="closeSideNav()">
+            <i class="fa-solid fa-angles-left"></i>
+        </p>
+
+        <!-- Side Navbar links -->
+        <div class="side-navbar-links">
+            <p class="side-navbar-link" style="margin-top: 20px;"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contacts</a></p>
+        </div>
+    </nav>
+
+    <div class="products">
+        <div class="product-search">
+            <input type="search" placeholder="search" id="input-value">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="product-result-container">
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?white_dress?1" alt="">
+                <h2>White Shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_dress?1" alt="">
+                <h2>Black Shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?sweatshirt?1" alt="">
+                <h2>Sweatshirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?jeans?1" alt="">
+                <h2>Blue Jean</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?hoodie?1" alt="">
+                <h2>Hoodie</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_dress?2" alt="">
+                <h2>black denim</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_sweater?1" alt="">
+                <h2>Black Sweater</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?t-shirt_purple?1" alt="">
+                <h2>purple top</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_coat?1" alt="">
+                <h2>Black Coat</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_Sweatshirt?1" alt="">
+                <h2>Black sweatshirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?white_Shoes?1" alt="">
+                <h2>White Shoes</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?women_t-shirt?1" alt="">
+                <h2>Women t-shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?riding_jacket?1" alt="">
+                <h2>Riding jacket</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?half-hand_shirt?1" alt="">
+                <h2>half hand shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?denim_jacket?1" alt="">
+                <h2>Denim Jacket</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?white_shirt" alt="">
+                <h2>White Shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_shirt" alt="">
+                <h2>Black Shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?sweatshirt" alt="">
+                <h2>Sweatshirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?blue_jean" alt="">
+                <h2>Blue Jean</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?hoodie" alt="">
+                <h2>Hoodie</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_denim" alt="">
+                <h2>black denim</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_sweater" alt="">
+                <h2>Black Sweater</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?purple_top" alt="">
+                <h2>purple top</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black-coat" alt="">
+                <h2>Black coat</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?black_Sweatshirt" alt="">
+                <h2>Black sweatshirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?white_Shoes" alt="">
+                <h2>White Shoes</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?women_t-shirt" alt="">
+                <h2>Women t-shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?riding_jacket" alt="">
+                <h2>Riding jacket</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?half-hand_shirt" alt="">
+                <h2>half hand shirt</h2>
+            </div>
+            <div class="product-result">
+                <img src="https://source.unsplash.com/random/200x200/?denim_jacket" alt="">
+                <h2>Denim Jacket</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="collection.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
